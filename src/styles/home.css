@@ -1,0 +1,19 @@
+
+.cards-group{
+    margin:20px;
+    padding:10px;
+    border:1px solid red;
+    background-color: 
+    rgba(244, 244, 244, 1);
+}
+.inner-cards{
+    border:1px solid blue;
+    width: 100%;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.inner-cards div img{
+    border: 1px solid green;
+}

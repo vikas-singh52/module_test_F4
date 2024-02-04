@@ -19,7 +19,7 @@ const Navbar = () => {
                     <NavLink to="/">
                       <img className="icon" src={homeIcon} alt="home_icon"/>
                     </NavLink>
-                    <NavLink to="/item">
+                    <NavLink to="item">
                     <img className="icon" src={bellIcon} alt="home_icon"/>
                     </NavLink>
                     <NavLink to="/">
