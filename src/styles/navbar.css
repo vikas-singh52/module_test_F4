@@ -1,0 +1,26 @@
+
+.navbar{
+    background-color: rgba(240, 90, 34, 1);
+    color: wheat;
+    padding: 10px;
+    margin: 10px;
+}
+.icons-group{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+}
+.icon{
+    margin-inline: 10px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-items{
+    width:60%;
+    padding-inline: 10px;
+}
