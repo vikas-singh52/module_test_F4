@@ -10,7 +10,8 @@ const Home = () => {
 
     return(
         <div className="cards-group">
-            <h2>Social Media For Travellers</h2>
+            <h3 className="commonStyle">Social Media For Travellers</h3>
+            <input className="search-input" type="text" placeholder="Search here"/>
             <Home2/>
         </div>
     )

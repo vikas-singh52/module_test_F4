@@ -12,7 +12,7 @@ const Item = () => {
 
     return(
         <div className="item-page">
-            <h3 style={{margin:"15px 10px"}}>Post Number {para.userId}</h3>
+            <h3 className="commonStyle">Post Number {para.userId}</h3>
             <div className="detail-page">
                 <img src={`https://picsum.photos/200?${para.userId}`} width="300" height="300" alt="pic"/>
                 <div>
@@ -25,7 +25,7 @@ const Item = () => {
                 </div>
             </div> 
             <div>
-                <h3 style={{margin:"15px 10px"}}>More Post</h3>
+                <h3 className="commonStyle">More Post</h3>
                 <Home2/>
             </div>      
         </div>
