@@ -19,13 +19,13 @@ const Navbar = () => {
                     <NavLink to="/">
                       <img className="icon" src={homeIcon} alt="home_icon"/>
                     </NavLink>
-                    <NavLink to="item">
+                    <NavLink to="/not">
                     <img className="icon" src={bellIcon} alt="home_icon"/>
                     </NavLink>
-                    <NavLink to="/">
+                    <NavLink to="/notj">
                       <img className="icon" src={userIcon} alt="home_icon"/>
                     </NavLink>
-                    <NavLink to="/item">
+                    <NavLink to="/page">
                       <img className="icon" src={saveIcon} alt="home_icon"/>
                     </NavLink>
                 </div>

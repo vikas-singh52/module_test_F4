@@ -11,7 +11,7 @@ const Reducer = (state=initialState,action)=>{
         case API_STARTED:
             return ({...state, load: true})
         case API_SUCCESS:
-            return ({...state, load:false, data:action.payload,err:""})
+            return ({...state, load:false, data:action.payload, err:""})
         case API_FAIL:
             return ({...state, load: false, data:[], err:action.payload})
         default:

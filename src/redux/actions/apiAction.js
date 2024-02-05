@@ -13,17 +13,29 @@ export const api_success = (value)=>{
     }
 }
 
-export const api_fail = (value)=>{
+export const api_fail = (err)=>{
     return{
         type: API_FAIL,
-        payload: value
+        payload: err
     }
 }
 export function postAPI (){
     return (dispatch)=>{
           dispatch(api_started())
-        axios.get("https://jsonplaceholder.typicode.com/posts")
+        axios.get(`https://jsonplaceholder.typicode.com/posts`)
         .then(response=>dispatch(api_success(response.data)))
         .catch(err =>dispatch(api_fail(err)))
     }
 }
+export function fetchItemData(id){
+    return (dispatch)=>{
+        console.log(id)
+        dispatch(api_started())
+      axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then(response=>dispatch(api_success(response.data)))
+      .catch(err =>dispatch(api_fail(err)))
+  }
+}
+
+
+
