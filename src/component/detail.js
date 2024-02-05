@@ -5,7 +5,6 @@ const Detail = () => {
 
     const para = useParams();
     let {data} = useSelector(state=>state)
-    let title = data[(para.userId)-1].title
     let body = data[(para.userId)-1].body
     return(
         <div>

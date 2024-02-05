@@ -1,14 +1,12 @@
 import React from "react";
-import { NavLink, Outlet, useNavigate, useParams } from "react-router-dom"
+import { NavLink, Outlet, useParams } from "react-router-dom"
 import '../styles/item.css'
-import { useSelector } from "react-redux";
 import Home2 from "./home2";
 
 const Item = () => {
     // console.log(props.userData)
     // console.log(props.user)
     const para = useParams();
-    let {data} = useSelector(s=>s)
 
     return(
         <div className="item-page">
