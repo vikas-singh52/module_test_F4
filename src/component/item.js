@@ -1,30 +1,33 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate, useParams } from "react-router-dom"
-import postImg from '../icons/Screenshot (16).png'
 import '../styles/item.css'
 import { useSelector } from "react-redux";
+import Home2 from "./home2";
 
 const Item = () => {
     // console.log(props.userData)
     // console.log(props.user)
     const para = useParams();
-    let {data} = useSelector(state=>state)
-    let title = data[para.userId].title
-    let body = data[para.userId].body
-    let navigate = useNavigate()
+    let {data} = useSelector(s=>s)
 
     return(
         <div className="item-page">
-            <p><b>Post Number {para.userId}</b></p>
+            <h3 style={{margin:"15px 10px"}}>Post Number {para.userId}</h3>
             <div className="detail-page">
-                <img src={postImg} width="500" height="500" alt="picture"/>
+                <img src={`https://picsum.photos/200?${para.userId}`} width="300" height="300" alt="pic"/>
                 <div>
                     {/* <button onClick={()=>navigate("detail")}>Detail</button> */}
                     <NavLink to="detail">Detail</NavLink>
                     <NavLink to="userInfo">User Info</NavLink>
-                    <Outlet/>
+                    <div className="outlet">
+                        <Outlet/>
+                    </div>
                 </div>
-            </div>       
+            </div> 
+            <div>
+                <h3 style={{margin:"15px 10px"}}>More Post</h3>
+                <Home2/>
+            </div>      
         </div>
     )
 }
